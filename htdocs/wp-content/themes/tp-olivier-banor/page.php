@@ -1,0 +1,36 @@
+<h2>PAGE.PHP</h2>
+<?php
+get_header();
+
+if (have_posts()):
+    while(have_posts()):
+        the_post();
+?>
+<article>
+    <header>
+        <!-- titre du post 
+         <a href="<?php the_permalink();?>">
+            <h1><?php the_title('<h1>', '</h1>'); ?></h1>
+         </a> -->
+
+    </header>
+    <article class="montheme-article"> 
+        <h2><?php the_title(); // affichage du titre ?></h2>
+        <div>
+            <a href="https://github.com/darkb1967/eval-wordpress-20260318-OB">Regarde mon super GitHub</a>
+            <?php the_content(); // extrait du post ?> 
+            <div>écrit par <?php the_author(); ?> le <?php the_date();?></div>
+        </div>
+        
+    </article>
+
+    <aside>
+        <!-- commentaire -->
+         <?php comments_template(); ?>
+    </aside>
+</article>
+<?php 
+    endwhile;
+endif;
+
+wp_footer();
