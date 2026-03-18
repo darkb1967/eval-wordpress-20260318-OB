@@ -9,10 +9,10 @@ if (have_posts()):
 <div>
 
     <article class="montheme-article"> 
-        <h2><?php the_title(); // affichage du titre ?></h2>
+        <h2><?php the_title(); ?></h2>
         <?php the_post_thumbnail('thumbnail'); ?>
         <div>
-            <?php the_excerpt(); // extrait du post ?> 
+            <?php the_excerpt(); ?> 
             <div>écrit par <?php the_author(); ?> le <?php the_date();?> catégorie : <?php the_category( ' ' ); ?></div>
         </div>
         

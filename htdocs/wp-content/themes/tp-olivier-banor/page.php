@@ -6,7 +6,7 @@ if (have_posts()):
     while(have_posts()):
         the_post();
 ?>
-<article>
+<div>
     <header>
         <!-- titre du post 
          <a href="<?php the_permalink();?>">
@@ -27,9 +27,10 @@ if (have_posts()):
 
     <aside>
         <!-- commentaire -->
+          <h3> Cette partie est un aside !!!</h3>
          <?php comments_template(); ?>
     </aside>
-</article>
+    </div>
 <?php 
     endwhile;
 endif;
