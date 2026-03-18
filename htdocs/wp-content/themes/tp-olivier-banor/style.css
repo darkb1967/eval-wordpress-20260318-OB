@@ -2,6 +2,42 @@
 Theme Name: Évaluation Wordpress Thème Niveau 1
 */
 
-a {
-    text-align: center;
+ul {
+  list-style-type : none;
 }
+
+menu-menu-principale {
+        margin: 0;
+}
+
+.menu {
+    display:flex;
+    margin: 0;
+    margin-left: 0;
+    /*gap: 1rem;*/
+    justify-content: flex-start;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    background-color: #00000010;
+    transition: all ease .8s;
+}
+
+.menu a:hover {
+    background-color: aqua;
+    transform: rotate(0deg);
+}
+
+.menu-item:hover .sub-menu {
+    display: block;
+    position: absolute;
+}
+
+.sub-menu .menu-item {
+    margin-top: 10px;
+}
+
+/* FIN MENU */

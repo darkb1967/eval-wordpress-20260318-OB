@@ -15,10 +15,11 @@ if (have_posts()):
 
     </header>
     <article class="montheme-article"> 
-        <h2><?php the_title(); // affichage du titre ?></h2>
+        <h2><?php the_title(); ?></h2>
+        <?php the_post_thumbnail('thumbnail'); ?>
         <div>
             <a href="https://github.com/darkb1967/eval-wordpress-20260318-OB">Regarde mon super GitHub</a>
-            <?php the_content(); // extrait du post ?> 
+            <?php the_content();  ?> 
             <div>écrit par <?php the_author(); ?> le <?php the_date();?></div>
         </div>
         
